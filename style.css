@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* //HOME PAGE DESIGN */
+#navbar {
+  color: white !important;
+}
+#navHead {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#loginRegisterBtn {
+  padding: 6px;
+
+  background-color: #fff;
+  color: rgb(100, 14, 14);
+  border-radius: 5px;
+  border: none;
+}
+
+#homeContent::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("./images/bg1.jpg");
+  opacity: 0.4;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.contentHead {
+  padding-top: 15rem;
+  padding-left: 12px;
+  color: rgb(37, 82, 37);
+}
+.contentHead h1,
+h5 {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+#homePageFlex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+/* HOME PAGE LOGIN DESIGN  */
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 15rem;
+  display: none;
+
+  border-radius: 10px;
+}
+#login::before {
+  content: " ";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+}
+#login input {
+  width: 70%;
+  background-color: white;
+  color: black;
+  margin: 12px;
+}
+#login button,
+h1 {
+  margin: 12px;
+}
+
+#closelogin {
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.loginContent {
+  padding: 12%;
+}
+
+/* ABOUT PAGE DESIGN  */
+#aboutContent::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  min-width: 100vw;
+  background-image: url("./images/aboutbg.jpg");
+  opacity: 0.4;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#aboutContent {
+  display: flex;
+  justify-content: center;
+}
+
+/* CAR LISTING DESIGN  */
+
+.cModel {
+  font-size: 25px;
+  font-weight: bolder;
+  float: left;
+}
+.cPrice {
+  float: right;
+}
+
+#carList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#whatNew {
+  background-color: red;
+}
+
+.btnList {
+  float: right;
+}
+
+/* FAQ DESIGN HERE  */
+.allFaqs {
+  background-color: rgb(243 243 243);
+  padding: 10px;
+}
+
+#faqInput {
+  min-width: 70%;
+}
+
+.centerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
