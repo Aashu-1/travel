@@ -10,7 +10,7 @@ closeLogin.addEventListener("click", () => {
 
 const success = () => {
   swal("Congratulations!", "You are logged in", "success");
-  setTimeout(() => {
+
     login.style.display = "none";
-  }, 2000);
+
 };
